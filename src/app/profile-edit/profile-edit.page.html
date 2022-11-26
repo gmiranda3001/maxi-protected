@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+   <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title text-center>Edita tu Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <form>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked"><h1>Nombre Completo</h1></ion-label>
+          <ion-input required type ="text" [(ngModel)]="name" name="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"> Email </ion-label>
+          <ion-input required type ="text" [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"> Telefono </ion-label>
+          <ion-input required type ="tel" [(ngModel)]="phone" name="phone"></ion-input>
+        </ion-item>
+         <ion-item>
+          <ion-label position="stacked"> Nombre de Contacto Preferido </ion-label>
+          <ion-input required type ="string" [(ngModel)]="favorite" name="favorite"></ion-input>
+        </ion-item>
+         <ion-item>
+          <ion-label position="stacked"> Telefono de Contacto Preferido </ion-label>
+          <ion-input required type ="tel" [(ngModel)]="telfav" name="telfav"></ion-input>
+        </ion-item>
+         <ion-item>
+          <ion-label position="stacked"> Mensaje de alerta a tu contacto </ion-label>
+          <ion-input required type ="text" [(ngModel)]="mensaje" name="mensaje"></ion-input>
+        </ion-item>
+
+
+        <ion-item>
+        <ion-button type= "submit" expand="block" shape= "round" (click)="updateProfile()"> Actualizar Perfil </ion-button>
+        </ion-item>
+      </ion-list>
+    </form>
+  </ion-card>
+
+</ion-content>

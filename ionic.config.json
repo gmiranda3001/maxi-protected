@@ -1,0 +1,7 @@
+{
+  "name": "Protected - Editable",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

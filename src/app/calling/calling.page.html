@@ -1,0 +1,51 @@
+
+<ion-header>
+  <ion-toolbar color= "primary">
+   <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>¿A quien llamamos?
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="dark">
+   <ion-button href="tel:{{user?.userTelFav}}">
+   <h2>{{user?.userFav}}</h2>
+   </ion-button>
+</ion-content>
+
+
+<ion-content color="dark">
+   <ion-button href="https://wa.me/{{user?.userTelFav}}?text={{user?.userMessage}}">
+   <ion-img src="../assets/imgs/wap.svg" alt="Whatsapp">
+    </ion-img>
+   </ion-button>
+</ion-content>
+
+<ion-content color="dark">
+   <ion-button href= "tel:911">
+   <ion-img src="../assets/imgs/1548374171.svg" alt="Ambulancia">
+    </ion-img>
+   </ion-button>
+</ion-content>
+
+<ion-content color="dark">
+  <div>
+   <ion-button href= "tel:911">
+   <ion-img src="../assets/imgs/1546021374.svg" alt="Policia">
+    </ion-img>
+   </ion-button>
+   </div>
+</ion-content>
+
+<ion-content color="dark">
+  <div>
+   <ion-button href= "tel:911">
+   <ion-img src="../assets/imgs/firefight.svg" alt="Bombero">
+    </ion-img>
+   </ion-button>
+   </div>
+</ion-content>
+

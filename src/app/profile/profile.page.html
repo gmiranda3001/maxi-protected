@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+   <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title text-center>{{user?.userName}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="light">
+  <ion-card color="protected">
+    <ion-card-content>
+      <h1>Nombre</h1>
+      <h2>{{user?.userName}}</h2>
+      <h1>Mail</h1>
+      <p>{{user?.userEmail}}</p>
+      <h1>Teléfono</h1>
+      <p>{{user?.userPhone}}</p>
+      <h1>Contacto Favorito:</h1>
+      <p>{{user?.userFav}}</p>
+      <h1>Telefono del Contacto:</h1>
+      <p>{{user?.userTelFav}}</p>
+      <h1>Mensaje Predefinido:</h1>
+      <p>{{user?.userMessage}}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" shape =" round" (click)="editProfile()" color="primary">Editar Perfil</ion-button>
+
+
+</ion-content>
