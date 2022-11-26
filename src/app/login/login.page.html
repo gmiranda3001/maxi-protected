@@ -1,10 +1,13 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title text-center>login</ion-title>
+   <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title text-center>Iniciar Sesión</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding" color="light" >
   <ion-card>
     <form>
       <ion-list>
@@ -26,5 +29,6 @@
     <p> ¿No tenés cuenta? Registrate <a [routerLink]="['/register']"> aquí </a></p>
     <p>  <a [routerLink]="['/passwordreset']"> ¿Olvidaste contraseña? </a></p>
   </div>
-
+  <ion-img src="../assets/icon/PPF.svg" alt="logo protected">
+  </ion-img>
 </ion-content>

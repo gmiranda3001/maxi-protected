@@ -1,14 +1,14 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
+    <ion-menu contentId="main-content" type="overlay" color="protected">
       <ion-content>
         <ion-list id="inbox-list">
-        
+
           <ion-list-header>
           <ion-icon size="large" src="../assets/icon/PPF.svg"></ion-icon>
           Protected
           </ion-list-header>
-          
+
           <ion-note>Apoyando a tu seguridad </ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
